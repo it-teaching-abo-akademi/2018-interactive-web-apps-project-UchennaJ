@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f3f9fb;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  min-height: 5em;
+  max-height: 11em;
+  background-color: lightskyblue;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+}
+
+.Header-title{
+  margin-top: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.Header span{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 5px 10px;
+  font-family: "Bell MT";
+}
+
+.AddPortfolioBtn {
+  margin-top: 100px;
+  margin-left: 80px;
+  height: 50px;
+  width: 80px;
+
+}
+
+.Portfolio {
+  position: relative;
+  height: 23em;
+  width: 550px;
+  float: left;
+  display: table-cell;
+  margin-top: 2%;
+  margin-bottom: 20px;
+  margin-left: 5%;
+
+  border: 2px solid black;
+  border-radius: 25px;
+
+  -webkit-box-shadow: 3px 3px 3px #ccc;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+
+.Portfolio-inner {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.Portfolio-title {
+  font-size: 1.2em;
+}
+
+.Portfolio-euro{
+  border: none;
+  background: none;
+  margin-left: 30px;
+}
+
+.Portfolio-dollar{
+  border: none;
+  background: none;
+  margin-left: 30px;
+}
+.Portfolio-deleteBtn{
+  position: absolute;
+  margin-left: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.Spacer{
+  height: 10em;
+}
+.Portfolio_container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Portfolio-content {
+  margin-top: 1.5em;
+  min-height: 11em;
+  max-height: 12em;
+}
+.Portfolio-btn{
+  position: absolute;
+  margin-top: 20px;
+}
+
+table {
+  width: 500px !important;
+  table-layout:fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:auto;
+  border: 1px solid #ddd;
+  background-color: lightcyan;
+}
+th {
+  font-size: 0.9em;
+}
+th, td {
+  padding: 1% 2%;
+}
+thead{
+  display: table;
+  width: calc(100% - 18px);
+}
+tbody {
+  background-color: white;
+  max-height: 10em;
+  overflow: auto;
+  display: block;
+  font-size: 11px;
+}
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+tr:nth-child(even){background-color: #d3d3d3}
+
+.plotBtn {
+  height: 50px;
+  width: 80px;
+}

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* For mobile phones: */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  /*!* Force table to not be like tables anymore *!*/
+  /*table, thead, tbody, th, td, tr {*/
+    /*display: block;*/
+  /*}*/
+
+  /*!* Hide table headers (but not display: none;, for accessibility) *!*/
+  /*thead tr {*/
+    /*position: absolute;*/
+    /*top: -9999px;*/
+    /*left: -9999px;*/
+  /*}*/
+
+  /*tr { border: 1px solid #ccc; }*/
+
+  /*td {*/
+    /*!* Behave  like a "row" *!*/
+    /*border: none;*/
+    /*border-bottom: 1px solid #eee;*/
+    /*position: relative;*/
+    /*padding-left: 50%;*/
+  /*}*/
+
+  /*td:before {*/
+    /*!* Now like a table header *!*/
+    /*position: absolute;*/
+    /*!* Top/left values mimic padding *!*/
+    /*top: 6px;*/
+    /*left: 6px;*/
+    /*width: 45%;*/
+    /*padding-right: 10px;*/
+    /*white-space: nowrap;*/
+  /*}*/
+  /*.after {*/
+    /*margin-left: 50%;*/
+  /*}*/
+
+  /*!**/
+  /*Label the data*/
+  /**!*/
+  /*td:nth-of-type(1):before { content: "Symbol"; }*/
+  /*td:nth-of-type(2):before { content: "Unit Value"; }*/
+  /*td:nth-of-type(3):before { content: "Quantity"; }*/
+  /*td:nth-of-type(4):before { content: "Total Value"; }*/
+  /*td:nth-of-type(5):before { content: "Select"; }*/
+  /*.Header span{*/
+    /*margin-left: 30%;*/
+    /*margin-top: 4%;*/
+    /*text-align: center;*/
+    /*color: white;*/
+    /*font-size: 2em;*/
+  /*}*/
+}
+/*	End of grid setup	*/
+
+.iconCredit{
+  text-align: center;
+}
